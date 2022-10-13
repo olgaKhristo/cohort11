@@ -1,0 +1,21 @@
+header {
+    background-image: url(./img/banner.jpg);
+    height: 80vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    background-color: black;
+    background-size: 25px;
+}
+h1, h4, p, h6 {
+    color: aliceblue;
+}
+div {
+    background-color: black;
+}
+body {
+    background-color: black;
+}
