@@ -1,16 +1,36 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
 header {
     background-image: url(./img/banner.jpg);
     height: 80vh;
+    width: 100%;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+header h1 {
+    padding-top: 85px;
+    text-align: center;
+    font-size: 500%;
+}
 nav {
     background-color: black;
     background-size: 25px;
+    width: 100%;
+    overflow: auto;
 }
-h1, h4, p, h6 {
+a {
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    padding: 25px;
+    width: 15%;
+
+}
+h1, h4, p, h6, a , h3 {
     color: aliceblue;
 }
 div {
@@ -18,4 +38,43 @@ div {
 }
 body {
     background-color: black;
+    color: aliceblue;
+}
+.container {
+    padding: 20px 0px 30px 0px;
+    text-align: center;
+}
+.left {
+    float: left;
+width: 45%;
+padding-left: 10px;
+}
+
+.right {
+    float: right;
+width: 45%;
+padding-left: 10px;
+}
+img {
+    width: 100%;
+}
+section {
+    clear: both;
+}
+
+section h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+section p {
+    padding: 5px;}
+
+    #testimonials p {
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+    }
+h2 {
+    text-align: center;
+    padding-top: 20px;
 }
