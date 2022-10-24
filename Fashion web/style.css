@@ -33,19 +33,20 @@
 nav {
     flex: 1;
     padding-left: 60px ;
+    width: 60%;
 }
 nav ul li {
+    color: blue;
     display: inline-block;
     list-style: none;
     margin: 0px 20px;
+   
 }
-nav ul li a {
-    
-    color: #333;
+a {
     text-decoration: none;
 }
 .content h1  {
-font-size: 60px;
+font-size: 50px;
 font-weight: 100;
 margin: 50px, 0, 10px, 0;
 color: blue;
@@ -58,16 +59,28 @@ color: blue;
 .content {
     margin-top: 10px;
     margin-left: 10px;
+    width: 80%;
+    height: 80%;
+    display: inline-flex;
+  
+}
+.left {
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
 }
 .content .button {
 display: inline-block;
 background: rgb(215, 18, 232);
     background: linear-gradient(45deg, rgba(215, 18, 232, 1) 20%, rgba(36, 154, 179, 1) 93%);;
 border-radius: 6px;
-padding: 10px, 20px;
-box-sizing: border-box;
+padding: 0.5%;
+
 text-decoration: none;
 color: azure;
+width: 25%;
+height: 8%;
+align-items: center;
 }
 .arrow_icons {
     margin-top: 40px;
@@ -81,9 +94,11 @@ color: azure;
 }
 .girl_img {
     height: 90%;
-    position: absolute;
+   align-self: flex-end;
+
     bottom: 0;
     right: 160px;
+
 }
 .social_links {
     position: left;
@@ -93,5 +108,12 @@ color: azure;
     left: -80px;
     bottom: 180px;
     padding-right: 20px;
+    height: 70%;
+    width: 15%;
 
+}
+.social_links img {
+    margin-bottom: 5%;
+    width: 20%;
+    height: 15%;
 }
