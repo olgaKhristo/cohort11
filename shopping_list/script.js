@@ -2,6 +2,7 @@
     const list = document.querySelector('ul');
     const input = document.querySelector('input');
     const button = document.querySelector('button');
+/**for button yes!*/
     button.onclick = function() {
         let newItem = input.value;
     input.value = '';
