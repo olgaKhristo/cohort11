@@ -23,3 +23,24 @@
 
             }
         }
+
+// select img element
+const img = document.getElementById('images')
+let toggle = true;
+img.addEventListener('click', function() {
+    toggle = !toggle;
+    if(toggle){
+        img.src = 'img//food.jpeg';
+    }else{
+        img.src = 'img//party.jpeg'
+    }
+   
+}
+)
+// for enter key
+input.addEventListener('keyup', (e) => {
+    if(e.key === 13) {
+        console.log(e.target.value)
+    }
+
+})
