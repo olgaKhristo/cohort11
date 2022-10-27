@@ -38,9 +38,9 @@ img.addEventListener('click', function() {
 }
 )
 // for enter key
-input.addEventListener('keyup', (e) => {
+input.addEventListener('keydown', (event) => {
     if(e.key === 13) {
-        console.log(e.target.value)
+        console.log(itemList)
     }
 
 })
