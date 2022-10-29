@@ -44,18 +44,25 @@ function myFanction(a, b) {
 let myButton = document.createElement('button1');
 myButton.id = 'button1';
 let myButton2 = document.createElement('button2');
-myButton.id = 'button2';
-let feelMeIn = document.getElementById('feelMeIn');
+myButton2.id = 'button2';
+let feelMeIn = document.getElementById('feelMeIn'); 
 feelMeIn.append(myButton);
 feelMeIn.append(myButton2);
 
 let Button1 = document.getElementById('button1');
 let Button2 = document.getElementById('button2');
+feelMeIn.style.width = '34rem'
+feelMeIn.style.height = '34rem'
+myButton.style.height = '3rem'
+myButton2.style.height = '3rem'
+myButton.style.width = '5rem'
+myButton2.style.width = '5rem'
 
-Button.addEventListener('click', (e) => {
-    console.log(e)
+Button1.addEventListener('click', (e) => {
+    console.log('hi all')
 }) 
 
 Button2.addEventListener('click', (e) => {
     console.log(e)
 }) 
+

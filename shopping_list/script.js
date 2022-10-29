@@ -8,6 +8,7 @@
     input.value = '';
     let itemList = document.createElement('li');
     let itemText = document.createElement('span');
+    itemList.id = 'itemList'
     let itemButton = document.createElement('button');
 
     itemList.appendChild(itemText);
@@ -38,9 +39,38 @@ img.addEventListener('click', function() {
 }
 )
 // for enter key
-input.addEventListener('keydown', (event) => {
-    if(e.key === 13) {
+input.addEventListener('keydown', (e) => {
+    console.log(e)
+    let itemList = document.createElement('li');
+    let item = e.target.value
+    // let itemList = document.getElementById('itemList')
+    console.log(itemList)
+    if (itemList == null) {
+        itemList.append(item)
+        let itemButton = document.createElement('button');
+        itemButton.textContent = 'X';
+        itemList.appendChild(itemButton);      
+
+        list.appendChild(itemList);
+e.target.value = " "
+        itemButton.onclick = function () {
+            list.removeChild(itemList);
+            input.focus();
+    }}
+    else if (e.key === "Enter") {
         console.log(itemList)
+        itemList.append(item)
+        let itemButton = document.createElement('button');
+        itemButton.textContent = 'X';
+        itemList.appendChild(itemButton);
+
+
+        list.appendChild(itemList);
+        e.target.value = ' '
+        itemButton.onclick = function () {
+            list.removeChild(itemList);
+            input.focus();
     }
+}
 
 })
