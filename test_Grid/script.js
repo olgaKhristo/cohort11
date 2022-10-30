@@ -66,3 +66,8 @@ Button2.addEventListener('click', (e) => {
     console.log(e)
 }) 
 
+if (myArray.includes('milk')) {
+console.log('yes I can eate milk');
+}else{
+    console.log('you run out of milk')
+}
