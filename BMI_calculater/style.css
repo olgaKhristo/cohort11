@@ -1,0 +1,31 @@
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+width: 100wh;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 80%;
+    height: 70%;
+}
+input {
+    height: 2rem;
+    width: 2rem;
+}
+button {
+    height: 2rem;
+    width: 2rem;
+}
+#output {
+    background-color: blue;
+}
