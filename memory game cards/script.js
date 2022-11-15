@@ -50,6 +50,9 @@ const cardArray = [
         img: 'img/tiger.jpeg',
     }
 ]
+cardArray.style.height = '20rem'
+cardArray.style.width = '20rem'
+
 //to shuffle the cards random each time
 cardArray.sort(() => 0.5 - Math.random())
 const gridDisplay = document.querySelector('#grid')
