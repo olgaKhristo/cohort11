@@ -64,6 +64,8 @@ function createBoard() {
 for (let i = 0; i < cardArray.length; i++) {
     const card = document.createElement('img')
     card.setAttribute('src', 'img/qqq.jpeg')
+    card.style.width = '100%'
+    card.style.height = '100%'
     card.setAttribute('data-id', i)
     card.addEventListener('click', flipCard)
     
