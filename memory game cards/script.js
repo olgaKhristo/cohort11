@@ -53,7 +53,9 @@ const cardArray = [
 
 
 //to shuffle the cards random each time
+
 cardArray.sort(() => 0.5 - Math.random())
+
 const gridDisplay = document.querySelector('#grid')
 const resultDisplay = document.querySelector('#result')
 let CardsChosen = []
@@ -81,12 +83,16 @@ function checkMatch(){
    console.log(cards)
     console.log('look gor match')
     if (optionOneId == optionTowId) {
-        cards[optionOneId].setAttribute('src', 'img/qqq.jpeg')
-        cards[optionTowId].setAttribute('src', 'img/qqq.jpeg')
+        //cards[optionOneId].setAttribute('src', 'img/qqq.jpeg')
+        //cards[optionTowId].setAttribute('src', 'img/qqq.jpeg')
         alert('you clikced the same card')
-
+        let bin = cardChosenIds.splice(1)
+        let bin2 = CardsChosen.splice(1)
+        console.log(cardChosenIds, bin, bin2)
+        
     }
 
+    if (optionOneId !== optionTowId) {
 
     if (CardsChosen[0] == CardsChosen[1]) {
         alert('you got a match')
@@ -107,6 +113,8 @@ cardChosenIds = []
 
 if(cardsWon.length == cardArray.length/2) {
     resultDisplay.innerHTML = 'Congrats, you got them all'
+
+}
 
 }
 
