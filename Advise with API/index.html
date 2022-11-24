@@ -13,7 +13,24 @@
     </div>
     //
     <script>
-tetch('https://api.adviceslip.com')
+     fetch('https://api.adviceslip.com/advice')
+     .then((response) => response.json())
+     .then((data) => {
+        //outputHTML(data);
+        console.log(data, slip, id);
+     });
+
+     function outputHTML(data) {
+        const results = data.slip.idforEach(item => {
+            const {title, id} = item;
+            document.getElementById('advice-list').innerHTML +=`<p>${title}</p>`
+        });
+     }
+
+    
+
+
+
     </script>
 
 </body>
