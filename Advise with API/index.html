@@ -7,26 +7,31 @@
     <title>Advise me</title>
 </head>
 <body>
-    <div>
-      <h1>Advise</h1>
-      <p id="advice-list"></p>
-    </div>
+    <div class="advice-list"> advice # <span>112</span></div>
+    <div class="advice-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    <button id="dice">dice</button>
     //
     <script>
+        const button = document.getElementById('dice');
+        const idElement = document.querySelector('.advice-list')
+        const textElement = document.querySelector('.advice-text')
+
+button.addEventListener('click', getAdvice )
+
+function getAdvice(){
      fetch('https://api.adviceslip.com/advice')
      .then((response) => response.json())
      .then((data) => {
-        //outputHTML(data);
-        console.log(data, slip, id);
+       
+        console.log(data);
+        textElement.textContent = data.slip.advice
+        idElement.textContent = data.slip.id
      });
 
-     function outputHTML(data) {
-        const results = data.slip.idforEach(item => {
-            const {title, id} = item;
-            document.getElementById('advice-list').innerHTML +=`<p>${title}</p>`
-        });
-     }
+    
 
+}
+getAdvice()
     
 
 
