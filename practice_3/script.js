@@ -1,5 +1,13 @@
 console.log('hi')
-function tempConverter (number) {
+
+
+
+
+
+
+
+
+/* function tempConverter (number) {
 let tempriture = number(C * 9/5) + 32;
 console.log(number)
 }
@@ -24,4 +32,4 @@ function multipleItems(){
     return num * 10 
 })
 }
-console.log(multipleItems())
+console.log(multipleItems())*/

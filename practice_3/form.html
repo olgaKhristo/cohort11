@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <style>
+.form-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+form#boking-form{
+width: 600px;
+}
+.form-row {
+    margin: 1rem 1rem 1rem 1rem ;
+}
+h1{
+    margin-right: 4rem;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+    <h1>booking form</h1>
+    <form action="" id="boking-form">
+        <div class="form-row">
+        <label for="name">Your name</label>
+        <input type = "text" name = "name" id=""name>
+    </div>
+
+    <div class="form-row">
+        <label for="start">When you like to book</label>
+        <input type="date" id="booking-date" name="booking-date">
+    </div>
+
+    <div class="form-row">
+        <label for="numberOfPeopl"> How many people: </label>
+        <select name="numberOfPeopl" id="numberOfPeopl">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="0">Group lager then 10</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="start">Vould you like vegan menue?</label>        
+        <input type="radio" id="html" name="vegan" value="vegan">
+        <label for="html">yes</label><br>
+        
+    </div>
+
+    <div class="form-row">
+        <label for="start">Do you have food Allergise? </label>
+        <fieldset>
+            <legend>Please specify: </legend>
+
+            <label for="peanuts">Peanuts</label>
+            <input type="checkbox" name="allergies" id="peanuts">
+
+            <label for="wheat">Weat</label>
+            <input type="checkbox" name="allergies" id="wheat">
+
+            <label for="soya">Soya</label>
+            <input type="checkbox" name="allergies" id="soya">
+
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" name="allergies" id="mushrooms">
+
+            <label for="molluscs">Molluscs</label>
+            <input type="checkbox" name="allergies" id="molluscs">
+
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" name="allergies" id="mushrooms">
+
+        </fieldset>
+    </div>
+    <div class="form-row">
+        <label for="tel">Your contact number: </label>
+        <input type="tel" name="tel" id="tel">      
+    
+    </div>
+
+
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+
+    <script>
+       const d = new Date();
+        const dateInput = document.getElementById('booking-date');
+        const todayDate = d.toISOString().substring(0, 10);
+        dateInput.value = todayDate;
+        dateInput.min = todayDate;
+        dateInput.max = d.setMonth(d.getMonth() + 1);
+        console.log(dateInput.value);
+
+    </script>
+</body>
+</html>
