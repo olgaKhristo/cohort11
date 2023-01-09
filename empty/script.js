@@ -1,19 +1,14 @@
 
-foodPrise = 8.20;
-isPlaseVeget = "no";
-isWitvinBuget = (foodPrise <= 10.50);
-isVegeterian = (isPlaseVeget == "yes")
-if( isWitvinBuget && isVegeterian) {
-    console.log("perfect");
-
-}else if(!isWitvinBuget && isVegeterian){
-    console.log("when reach")
-}else if (isWitvinBuget && !isVegeterian){
-    console.log("no vwgan")
-}else{
-    console.log("somewerre esle")
+function FizBuz(num){
+for(let i = 1; i<= num; i++){
+    if(i%2===0 && i%3===0)
+    console.log('FizBuz');
+    else if(i%3===0) console.log('buz')
+    else if(i%2===0) console.log('fiz')
+    else console.log(i)
 }
-
+}
+FizBuz(12)
 
 //console.log(Object.values(spotifyPlaylist)[1]);
 
