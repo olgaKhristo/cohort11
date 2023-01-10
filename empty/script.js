@@ -1,5 +1,19 @@
+function getCount(str){
+    let wovelsCount = 0;
+    const wovels = ['a','y','o', 'e', 'i','u'];
+    const strArray  = str.split('');
+    strArray.forEach(el) 
+        for(let i=0; i<wovels.length -1; i++){
+            if(el === wovels[i])
+        
+        
+    
+    return wovelsCount
+    
 
-function FizBuz(num){
+
+
+/*function FizBuz(num){
 for(let i = 1; i<= num; i++){
     if(i%2===0 && i%3===0)
     console.log('FizBuz');
@@ -8,23 +22,6 @@ for(let i = 1; i<= num; i++){
     else console.log(i)
 }
 }
-FizBuz(12)
+FizBuz(12)*/
 
-//console.log(Object.values(spotifyPlaylist)[1]);
 
-//var myMum = 0;
-//for (var i = 0; i < 9; i++ ) {
-//    myMum = myMum +1;
-//}
-//console.log(myMum);
-
-//function Coffcount(coffe){
-   // if(coffe < 3) {
-     //   console.log("not enouf cof");
-    //}else if (coffe > 2 && coffe < 6) {
-       // console.log("too much cof");
-    //}else if (coffe > 5) {
-       // console.log("dye");
-   // }
-//}
-//Coffcount(5)
