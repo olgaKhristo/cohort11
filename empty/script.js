@@ -1,14 +1,17 @@
+for (i = 0; i<=10;i++){
+    console.log(i)
+}
+
+
+/*vovels count
 function getCount(str){
     let wovelsCount = 0;
     const wovels = ['a','y','o', 'e', 'i','u'];
     const strArray  = str.split('');
     strArray.forEach(el) 
         for(let i=0; i<wovels.length -1; i++){
-            if(el === wovels[i])
-        
-        
-    
-    return wovelsCount
+            if(el === wovels[i])      
+    return wovelsCount*/
     
 
 
